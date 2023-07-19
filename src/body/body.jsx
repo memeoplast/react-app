@@ -6,7 +6,6 @@ const Body = () =>{
         <div className="body-div">
             <p>Hello World!</p>
         </div>
-
     )
 }
 
