@@ -1,13 +1,48 @@
 .body-div{
     height: 750px;
     background-color: rgb(21, 35, 57);
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 60px;
-    font-weight: 800;
     justify-content: center;
     display: flex;
     align-items: center;
-    
+
 }
 
+.layer2  {
+    background-image: url(../assets/layer2.svg);
+}
+
+.spacer {
+    aspect-ratio: 960/150;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.flip {
+    transform: rotate(180deg);
+}
+.blob-content{
+  font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+
+}
+/* THIS IS A BLOB TEST CODE: it was supposed to create two blobs in the background that morph into another.
+.blob-motion {
+    position: absolute;
+    transform: translateY(-20%);
+    z-index: 0;
+  }
+
+  .blob-content {
+    z-index: -1;
+  }
+
+  .blobs {
+    width: 100%;
+    background: url('../assets/blob1.svg') no-repeat bottom / cover;
+  }
+  */

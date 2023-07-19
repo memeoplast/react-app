@@ -16,10 +16,10 @@ const Footer=() => {
                             <p>Benefits</p>
                         </a>
                         <a href="#">
-                            <p>Link3</p>
+                            <p>Retreats</p>
                         </a>
                         <a href="#">
-                            <p>Link4</p>
+                            <p>Rewards</p>
                         </a>
                     </div>
                     <div className="sb__footer-links-div">
@@ -68,7 +68,7 @@ const Footer=() => {
                 <div className="sb__footer-below">
                     <div className="sb__footer-copyright">
                         <p>
-                            @{new Date().getFullYear} ABC Company. All rights reserved.
+                            ©{new Date().getFullYear} ABC Company. All rights reserved.
                         </p>
                     </div>
                     <div className="sb__footer-below-links">
