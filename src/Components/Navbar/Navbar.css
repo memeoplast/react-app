@@ -49,6 +49,14 @@ body a{
     border-radius: 1rem;
 }
 
+.switch {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 1vw;
+    height: 100px;
+}
+
 .navbar-links_container p,
 .navbar-button p,
 .navbar-menu_container p{

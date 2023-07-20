@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./Navbar.css";
 import {RiMenu3Line, RiCloseLine} from "react-icons/ri";
 import logo from "../../assets/logo.jpg";
+import Switch from "react-switch";
+import { ThemeContext } from "../ThemeContext";
 
 const Navbar=() => {
-    const [isMenuOpen, setisMenuOpen] = useState(false)
+    const [isMenuOpen, setisMenuOpen] = useState(false);
+    const { isDark, toggleTheme } = useContext(ThemeContext);
+
     return(
         <div className="navbar-bg">
             <div className="navbar">
@@ -41,6 +45,7 @@ const Navbar=() => {
                             </a>
                         </p>
                     </div>
+                    <div className="switch"><Switch onChange={toggleTheme} checked={isDark === "dark"} /></div>
                     <div className="navbar-button">
                         <a href="https://giphy.com/gifs/welcome-cult-one-of-us-kHs1lBhZWaK5rj7lt3">
                             <button type="button">CONTACT US</button>
