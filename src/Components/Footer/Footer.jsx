@@ -1,5 +1,5 @@
 import React from "react";
-import "./footer.css"
+import "../Footer/Footer.css"
 
 // Creating a footer with links
 const Footer=() => {
@@ -68,7 +68,8 @@ const Footer=() => {
                 <div className="footer-below">
                     <div className="footer-copyright">
                         <p>
-                            ©{new Date().getFullYear()} ABC Company. All rights reserved.
+                            © {new Date().getFullYear()} ABC Company. All rights reserved.
+
                         </p>
                     </div>
                     <div className="footer-below-links">
@@ -84,6 +85,4 @@ const Footer=() => {
 
     )
 }
-
-
 export default Footer

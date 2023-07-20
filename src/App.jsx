@@ -1,8 +1,8 @@
 import Counter from "./Components/Counter"
 import './App.css'
-import Navbar from "./Components/navbar"
-import Body from "./body/Body"
-import Footer from "./footer/Footer"
+import Navbar from "./Components/Navbar/Navbar.jsx"
+import Body from "./Components/Body/Body.jsx"
+import Footer from "./Components/Footer/Footer.jsx"
 
 function App() {
 

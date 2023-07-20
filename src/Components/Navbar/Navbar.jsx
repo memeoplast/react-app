@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import {RiMenu3Line, RiCloseLine} from "react-icons/ri";
-import logo from "../assets/logo.jpg";
+import logo from "../../assets/logo.jpg";
 
 const Navbar=() => {
-    const [toggleMenu, setToggleMenu] = useState(false)
+    const [isMenuOpen, setisMenuOpen] = useState(false)
     return(
         <div className="navbar-bg">
             <div className="navbar">
@@ -47,19 +47,19 @@ const Navbar=() => {
                         </a>
                     </div>
                     <div className="navbar-menu">
-                        {toggleMenu ?(
+                        {isMenuOpen ?(
                             <RiCloseLine
                             color="#000"
                             size={27}
-                            onClick={()=> setToggleMenu(false)}
+                            onClick={()=> setisMenuOpen(false)}
                         />) : (
                             <RiMenu3Line
                             color="#000"
                             size={27}
-                            onClick={()=>setToggleMenu(true)}
+                            onClick={()=>setisMenuOpen(true)}
                             />
                         )}
-                            {toggleMenu && (
+                            {isMenuOpen && (
                                 <div className="navbar-menu_container scale-up-center">
                                     <div className="navbar-menu:container-links">
                                     <p>
