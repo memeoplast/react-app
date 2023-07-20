@@ -1,5 +1,5 @@
 import React from "react";
-import './body.css';
+import './Body.css';
 <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
 
 

@@ -5,9 +5,9 @@ import "./footer.css"
 const Footer=() => {
     return(
         <div className="footer">
-            <div className="sb__footer section__padding">
-                <div className="sb__footer-links">
-                    <div className="sb__footer-links-div">
+            <div className="footer section__padding">
+                <div className="footer-links">
+                    <div className="footer-links-div">
                         <h4> For Business</h4>
                         <a href="#">
                             <p>Employer</p>
@@ -22,7 +22,7 @@ const Footer=() => {
                             <p>Rewards</p>
                         </a>
                     </div>
-                    <div className="sb__footer-links-div">
+                    <div className="footer-links-div">
                         <h4> Partners</h4>
                         <a href="#">
                             <p>Google</p>
@@ -34,7 +34,7 @@ const Footer=() => {
                             <p>Klarna</p>
                         </a>
                     </div>
-                    <div className="sb__footer-links-div">
+                    <div className="footer-links-div">
                         <h4> Company</h4>
                         <a href="#">
                             <p>Team</p>
@@ -46,7 +46,7 @@ const Footer=() => {
                             <p>About Us</p>
                         </a>
                     </div>
-                    <div className="sb__footer-links-div">
+                    <div className="footer-links-div">
                         <h4> Social Media</h4>
                         <a href="#">
                             <p>Facebook</p>
@@ -65,13 +65,13 @@ const Footer=() => {
 
                 <hr></hr>
 
-                <div className="sb__footer-below">
-                    <div className="sb__footer-copyright">
+                <div className="footer-below">
+                    <div className="footer-copyright">
                         <p>
-                            ©{new Date().getFullYear} ABC Company. All rights reserved.
+                            ©{new Date().getFullYear()} ABC Company. All rights reserved.
                         </p>
                     </div>
-                    <div className="sb__footer-below-links">
+                    <div className="footer-below-links">
                         <a href="#"><div><p>Terms and Conditions</p></div></a>
                         <a href="#"><div><p>Privacy</p></div></a>
                         <a href="#"><div><p>Security</p></div></a>
