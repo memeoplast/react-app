@@ -1,13 +1,16 @@
-import Counter from "./Counter"
+import Counter from "./Components/Counter"
 import './App.css'
+import Body from "./Components/Body/Body"
+import Footer from "./Components/Footer/Footer"
 
 function App() {
 
   return (
       <div className="App">
-        <h1>Hello World!</h1>
-        <Counter />
+        <Body />
+        <Footer />
       </div>
+
   )
 }
 
