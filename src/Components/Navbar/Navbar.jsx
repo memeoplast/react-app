@@ -1,9 +1,10 @@
 import React, { useState, useContext } from "react";
 import "./Navbar.css";
 import {RiMenu3Line, RiCloseLine} from "react-icons/ri";
-import logo from "../../assets/logo.jpg";
+import logo from "../../assets/logo.svg";
 import Switch from "react-switch";
 import { ThemeContext } from "../ThemeContext";
+import { BsSunFill, BsMoonStarsFill } from "react-icons/bs";
 
 const Navbar=() => {
     const [isMenuOpen, setisMenuOpen] = useState(false);
@@ -45,8 +46,29 @@ const Navbar=() => {
                             </a>
                         </p>
                     </div>
-                    <div className="switch"><Switch onChange={toggleTheme} checked={isDark === "dark"} /></div>
+
+
                     <div className="navbar-button">
+                    <div className="switch__toggle">
+
+                        <Switch className="theme-switch" 
+                        onChange={toggleTheme} 
+                        checked={isDark === "dark"}
+                        onColor="#1f2937"
+                        checkedIcon={
+                            <div className="theme-switch__checkedIcon"> 
+                                <BsMoonStarsFill />
+                            </div>
+                        }
+                        uncheckedIcon={
+                            <div className="theme-switch__uncheckedIcon">
+                                <BsSunFill />
+                                </div>
+                        }
+                        
+                        />
+                        </div>
+
                         <a href="https://giphy.com/gifs/welcome-cult-one-of-us-kHs1lBhZWaK5rj7lt3">
                             <button className="button__big" type="button">CONTACT US</button>
                         </a>
@@ -94,6 +116,10 @@ const Navbar=() => {
                                     </p>
                                 </div>
                                 <div className="navbar-menu_container-links-sign">
+                                <div className="switch__toggle">
+                                    <Switch onChange={toggleTheme} checked={isDark === "dark"} />
+                                    </div>
+
                                     <a href="#">
                                         <button className="button__big" type="button">CONTACT US</button>
                                     </a>
