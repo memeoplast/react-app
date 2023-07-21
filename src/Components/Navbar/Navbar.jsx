@@ -117,7 +117,22 @@ const Navbar=() => {
                                 </div>
                                 <div className="navbar-menu_container-links-sign">
                                 <div className="switch__toggle">
-                                    <Switch onChange={toggleTheme} checked={isDark === "dark"} />
+                                <Switch className="theme-switch" 
+                                    onChange={toggleTheme} 
+                                    checked={isDark === "dark"}
+                                    onColor="#1f2937"
+                                    checkedIcon={
+                                        <div className="theme-switch__checkedIcon"> 
+                                            <BsMoonStarsFill />
+                                        </div>
+                                    }
+                                    uncheckedIcon={
+                                        <div className="theme-switch__uncheckedIcon">
+                                            <BsSunFill />
+                                            </div>
+                                    }
+                                    
+                                />
                                     </div>
 
                                     <a href="#">
