@@ -69,7 +69,7 @@ const Navbar=() => {
                         />
                         </div>
 
-                        <a href="https://giphy.com/gifs/welcome-cult-one-of-us-kHs1lBhZWaK5rj7lt3">
+                        <a href="https://giphy.com/clips/eternalfamilytv-eternal-family-tv-99ers-nFgGB7f0BLqGNcpIyc">
                             <button className="button__big" type="button">CONTACT US</button>
                         </a>
                     </div>
@@ -135,7 +135,7 @@ const Navbar=() => {
                                 />
                                     </div>
 
-                                    <a href="#">
+                                    <a href="https://giphy.com/clips/eternalfamilytv-eternal-family-tv-99ers-nFgGB7f0BLqGNcpIyc">
                                         <button className="button__big" type="button">CONTACT US</button>
                                     </a>
                                 </div>

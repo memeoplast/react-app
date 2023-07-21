@@ -45,15 +45,17 @@
     color: rgb(0, 0, 0);
 }
 
-#dark .footer-links-div a {
+#dark .link__standard {
     color: white;
     text-decoration: none;
 }
 
-#light .footer-links-div a {
+#light .link__standard {
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
+
+
 
 #dark .footer{
     background-color: rgb(35, 35, 35);
