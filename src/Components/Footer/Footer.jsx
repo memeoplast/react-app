@@ -8,7 +8,7 @@ const Footer=() => {
             <div className="footer section__padding">
                 <div className="footer-links">
                     <div className="footer-links-div">
-                        <h4> For Business</h4>
+                        <h4 className="footer-links-headig"> For Business</h4>
                         <a href="#">
                             <p>Employer</p>
                         </a>
@@ -23,7 +23,7 @@ const Footer=() => {
                         </a>
                     </div>
                     <div className="footer-links-div">
-                        <h4> Partners</h4>
+                        <h4 className="footer-links-headig">  Partners</h4>
                         <a href="#">
                             <p>Google</p>
                         </a>
@@ -35,7 +35,7 @@ const Footer=() => {
                         </a>
                     </div>
                     <div className="footer-links-div">
-                        <h4> Company</h4>
+                        <h4 className="footer-links-headig"> Company</h4>
                         <a href="#">
                             <p>Team</p>
                         </a>
@@ -47,7 +47,7 @@ const Footer=() => {
                         </a>
                     </div>
                     <div className="footer-links-div">
-                        <h4> Social Media</h4>
+                        <h4 className="footer-links"> Social Media</h4>
                         <a href="#">
                             <p>Facebook</p>
                         </a>
@@ -63,19 +63,19 @@ const Footer=() => {
                     </div>
                 </div>
 
-                <hr></hr>
+                <hr className="footer-divider"></hr>
 
                 <div className="footer-below">
                     <div className="footer-copyright">
-                        <p>
+                        <p className="copyright-info">
                             © {new Date().getFullYear()} ABC Company. All rights reserved.
 
                         </p>
                     </div>
                     <div className="footer-below-links">
-                        <a href="#"><div><p>Terms and Conditions</p></div></a>
-                        <a href="#"><div><p>Privacy</p></div></a>
-                        <a href="#"><div><p>Security</p></div></a>
+                        <a href="#"><div><p className="legal-links">Terms and Conditions</p></div></a>
+                        <a href="#"><div><p className="legal-links">Privacy</p></div></a>
+                        <a href="#"><div><p className="legal-links">Security</p></div></a>
 
 
                     </div>

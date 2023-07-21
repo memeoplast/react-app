@@ -1,11 +1,46 @@
 .body-div{
     height: 750px;
-    background-color: rgb(21, 35, 57);
     justify-content: center;
     display: flex;
     align-items: center;
 
 }
+#light .body-div{
+    background-color: white ;
+  
+  }
+  
+  #dark .body-div{
+    background-color: #1f2937;
+  
+  }
+
+#dark .heading__primary {
+    color: white;
+}
+
+#light .heading__primary{
+    color: black;
+}
+
+#dark .heading__secondary{
+    color: white
+}
+
+#light .heading__secondary {
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .layer2  {
     background-image: url(../assets/layer2.svg);

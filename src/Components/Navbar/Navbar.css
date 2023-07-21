@@ -1,4 +1,4 @@
-body a{
+ .link__navbar{
     text-decoration: none;
     color: black;
     font-size: 20px;
@@ -11,16 +11,28 @@ body a{
     z-index: 2;
 }
 
-.navbar{
+#dark .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: #e5e7eb;
     /*border-radius: 0.5rem;*/
     /*border: 1px solid #8000e5;*/
    /* margin: 2.6rem 2rem;*/
     padding: auto 2rem;
 }
+#light .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    /*border-radius: 0.5rem;*/
+    /*border: 1px solid #8000e5;*/
+   /* margin: 2.6rem 2rem;*/
+    padding: auto 2rem;
+}
+
+
 
 .navbar-links{
     flex: 1;
@@ -41,12 +53,22 @@ body a{
     margin-right: 2rem;
 }
 
-.navbar-button{
+#light .navbar-button{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-right: 2rem;
     border-radius: 1rem;
+    background-color: rgb(247, 247, 247) ;
+}
+
+#dark .navbar-button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+    border-radius: 1rem;
+    background-color: #e5e7eb ;
 }
 
 .switch {
@@ -68,11 +90,23 @@ body a{
     cursor: pointer;
 }
 
-.navbar-button button, 
-.navbar-menu_container button{
+#light .button__big {
     padding: 0.5rem 1rem;
     color: #8000e5;
-    background-color: white;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid #8000e5;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 25px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#dark .button__big{
+    padding: 0.5rem 1rem;
+    color: #8000e5;
+    background-color: #e5e7eb;
     border: 1px solid #8000e5;
     font-weight: 600;
     font-size: 13px;
@@ -93,13 +127,29 @@ body a{
     cursor: pointer;
 }
 
-.navbar-menu_container{
+#light .navbar-menu_container{
     display: flex;
     justify-content: center;
     align-items: flex-end;
     flex-direction: column;
     text-align: end;
-    background-color: white;
+    background-color: rgb(247, 247, 247);
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 170px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+#dark .navbar-menu_container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background-color: #e5e7eb;
     padding: 2rem;
     position: absolute;
     right: 0;
@@ -119,18 +169,18 @@ body a{
 }
 
 .scale-up-center{
-    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-@-webkit-keyframes scale-up-center{
+@keyframes scale-up-center{
     0%{
-        -webkit-animation: scale(0.5);
+        animation: scale(0.5);
         transform: scale(0.5);
     }
 
     100%{
-        -webkit-animation: scale(1);
+        animation: scale(1);
         transform: scale(1); 
     }
 }
@@ -138,12 +188,12 @@ body a{
 
 @keyframes scale-up-center{
     0%{
-        -webkit-animation: scale(0.5);
+        animation: scale(0.5);
         transform: scale(0.5);
     }
 
     100%{
-        -webkit-animation: scale(1);
+        animation: scale(1);
         transform: scale(1); 
     }
 }

@@ -20,27 +20,27 @@ const Navbar=() => {
                     </div>
                     <div className="navbar-links_container">
                         <p>
-                            <a href="#">
+                            <a className="link__navbar" href="#">
                                 Home
                             </a>
                         </p>
                         <p>
-                            <a href="#">
+                            <a className="link__navbar" href="#">
                                 Offers
                             </a>
                         </p>
                         <p>
-                            <a href="#">
+                            <a className="link__navbar" href="#">
                                 Products
                             </a>
                         </p>
                         <p>
-                            <a href="#">
+                            <a className="link__navbar" href="#">
                                 Pricing
                             </a>
                         </p>
                         <p>
-                            <a href="#">
+                            <a className="link__navbar" href="#">
                                 About Us
                             </a>
                         </p>
@@ -48,7 +48,7 @@ const Navbar=() => {
                     <div className="switch"><Switch onChange={toggleTheme} checked={isDark === "dark"} /></div>
                     <div className="navbar-button">
                         <a href="https://giphy.com/gifs/welcome-cult-one-of-us-kHs1lBhZWaK5rj7lt3">
-                            <button type="button">CONTACT US</button>
+                            <button className="button__big" type="button">CONTACT US</button>
                         </a>
                     </div>
                     <div className="navbar-menu">
@@ -68,34 +68,34 @@ const Navbar=() => {
                                 <div className="navbar-menu_container scale-up-center">
                                     <div className="navbar-menu:container-links">
                                     <p>
-                                        <a href="#">
+                                        <a className="link__navbar" href="#">
                                             Home
                                         </a>
                                     </p>
                                     <p>
-                                        <a href="#">
+                                        <a className="link__navbar" href="#">
                                             Offers
                                         </a>
                                     </p>
                                     <p>
-                                        <a href="#">
+                                        <a className="link__navbar" href="#">
                                             Products
                                         </a>
                                     </p>
                                     <p>
-                                        <a href="#">
+                                        <a className="link__navbar" href="#">
                                             Pricing
                                         </a>
                                     </p>
                                     <p>
-                                        <a href="#">
+                                        <a className="link__navbar" href="#">
                                             About Us
                                         </a>
                                     </p>
                                 </div>
                                 <div className="navbar-menu_container-links-sign">
                                     <a href="#">
-                                        <button type="button">CONTACT US</button>
+                                        <button className="button__big" type="button">CONTACT US</button>
                                     </a>
                                 </div>
                                 </div>

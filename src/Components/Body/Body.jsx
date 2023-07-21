@@ -1,6 +1,6 @@
 import React from "react";
 import './Body.css';
-<script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+// <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script> 
 
 
 const Body = () => {
@@ -8,8 +8,8 @@ const Body = () => {
         <div className="body-div">
             <section className="blob">
                 <div className="blob-content">
-                    <h1>Hello World!</h1>
-                    <p>This is a website.</p>
+                    <h1 className="heading__primary">Hello World!</h1>
+                    <h3 className="heading__secondary">This is a website.</h3>
                 </div>
                 {/* THIS IS A BLOB TEST CODE: it was supposed to create two blobs in the background that morph into another. 
                 <svg
