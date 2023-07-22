@@ -217,7 +217,7 @@
 /*---------responsive----------------------------*/
 
 
-@media screen and (max-width:1050px) {
+@media screen and (max-width:900px) {
     .navbar-links_container{
         display: none;
     }
@@ -228,13 +228,8 @@
 }
 
 
-@media screen and (max-width:700px) {
-    .navbar{
-        padding: 0.5rem 1rem;
-    }
-}
 
-@media screen and (max-width:550px) {
+@media screen and (max-width:900px) {
     .navbar{
         padding: 0.5rem;
     }

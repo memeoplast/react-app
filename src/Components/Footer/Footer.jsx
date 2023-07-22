@@ -47,7 +47,7 @@ const Footer=() => {
                         </a>
                     </div>
                     <div className="footer-links-div">
-                        <h4 className="footer-links"> Social Media</h4>
+                        <h4 className="footer-links-heading"> Social Media</h4>
                         <a className="link__standard" href="#">
                             <p>Facebook</p>
                         </a>

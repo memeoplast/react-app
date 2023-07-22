@@ -1,19 +1,19 @@
-.body-div{
+.block__content{
     height: 750px;
     justify-content: center;
     display: flex;
     align-items: center;
-
+    width: auto;
 }
-#light .body-div{
+
+#light .block__content{
     background-color: white ;
   
-  }
+}
   
-  #dark .body-div{
-    background-color: #1f2937;
-  
-  }
+#dark .block__content{
+  background-color: #1f2937;
+}
 
 #dark .heading__primary {
     color: white;

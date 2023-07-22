@@ -1,4 +1,3 @@
-import Counter from "./Components/Counter"
 import './App.css'
 import Navbar from "./Components/Navbar/Navbar.jsx"
 import Body from "./Components/Body/Body.jsx"
