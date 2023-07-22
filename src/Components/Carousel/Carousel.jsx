@@ -38,6 +38,11 @@ const ResponsiveCarousel = () => {
                 <div className="carousel__item">Item 2</div>
                 <div className="carousel__item">Item 3</div>
                 <div className="carousel__item">Item 4</div>
+                <div className="carousel__item">Item 1</div>
+                <div className="carousel__item">Item 2</div>
+                <div className="carousel__item">Item 3</div>
+                <div className="carousel__item">Item 4</div>
+
             </Carousel>
         </div>
     )

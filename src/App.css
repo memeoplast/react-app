@@ -1,8 +1,14 @@
-*{
+* {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.app {
+  --color--text-default: black;
+  --color--layout-default: #e5e7eb;
 
-
-
+  &.mode--dark {
+    --color--text-default: white;
+    --color--layout-default: black;
+  }
+}
