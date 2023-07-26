@@ -4,11 +4,19 @@
 }
 
 .app {
+  --color--primary: purple;
   --color--text-default: black;
-  --color--layout-default: #e5e7eb;
+  /* --color--text-light: black; */
+  --color--layout-default: white;
+  --color--layout-light: #e5e7eb;
+  --color--layout-dark: #e5e7eb;
 
   &.mode--dark {
     --color--text-default: white;
-    --color--layout-default: black;
+    --color--layout-default: #1f2937;
+    --color--layout-light:#e5e7eb;
+    --color-text-dark: black;
+    --color--layout-dark: rgb(35, 35, 35);
+
   }
 }

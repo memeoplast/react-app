@@ -7,15 +7,20 @@ import { createContext, useState } from "react";
 import { ThemeContext } from "./Components/ThemeContext";
 
 function App() {
-  const [isDark, setIsDark] = useState("light");
+  const [isDark, setIsDark] = useState(false);
+  console.log("isDark", isDark);
 
   const toggleTheme = () => {
-    setIsDark((curr) => (curr === "dark" ? "light" : "dark"));
+    setIsDark((curr) => !curr);
   };
 
   return (
     <ThemeContext.Provider value={{ isDark, toggleTheme }}>
-      <div id={isDark} className={`app ${isDark && "mode--dark"}`}>
+      <div
+        className={`app ${isDark && "mode--dark"}`}
+        // TODO: remove
+        id={isDark ? "dark" : "light"}
+      >
         <Navbar />
         <Body />
         <ResponsiveCarousel />

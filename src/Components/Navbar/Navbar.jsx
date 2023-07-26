@@ -46,7 +46,7 @@ const Navbar = () => {
               <Switch
                 className="navbar__theme-switch"
                 onChange={toggleTheme}
-                checked={isDark === "dark"}
+                checked={isDark}
                 onColor="#1f2937"
                 checkedIcon={
                   <div className="navbar__theme-switch-checked-icon">
