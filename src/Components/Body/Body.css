@@ -8,3 +8,12 @@
   width: 100%;
   padding-top: 3rem;
 }
+
+.block__content-header {
+  background-image: url(../../assets/header.svg);
+  aspect-ratio: 960/100;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

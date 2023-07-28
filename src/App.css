@@ -30,5 +30,11 @@
   margin-bottom: 4rem;
   font-size: 80px;
   text-align: center;
-  margin-top: 0;
+  margin-top: -6;
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
