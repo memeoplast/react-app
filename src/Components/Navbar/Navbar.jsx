@@ -1,14 +1,12 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.svg";
 import Switch from "react-switch";
-import { ThemeContext } from "../ThemeContext";
 import { BsSunFill, BsMoonStarsFill } from "react-icons/bs";
 
-const Navbar = () => {
+const Navbar = ({ isDark, setIsDark }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { isDark, toggleTheme } = useContext(ThemeContext);
 
   return (
     <div className="navbar__bg">
@@ -45,9 +43,9 @@ const Navbar = () => {
             <div className="navbar__button-container">
               <Switch
                 className="navbar__theme-switch"
-                onChange={toggleTheme}
+                onChange={() => setIsDark(!isDark)}
                 checked={isDark}
-                onColor="#1f2937"
+                onColor="#000"
                 checkedIcon={
                   <div className="navbar__theme-switch-checked-icon">
                     <BsMoonStarsFill />

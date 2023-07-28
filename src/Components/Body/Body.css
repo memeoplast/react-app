@@ -1,56 +1,10 @@
-.block__content{
-    height: 750px;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: auto;
-    background-color: var(--color--layout-default);
-    color: var(--color--text-default);
-    font-size: 70px;
+.block__content {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color--layout-default);
+  color: var(--color--text-default);
+  width: 100%;
+  padding-top: 3rem;
 }
-
-
-
-
-
-
-/* .layer2  {
-    background-image: url(../assets/layer2.svg);
-}
-
-.spacer {
-    aspect-ratio: 960/150;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.flip {
-    transform: rotate(180deg);
-}
-.blob-content{
-  font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 60px;
-    font-weight: 800;
-    text-align: center;
-
-} */
-/* THIS IS A BLOB TEST CODE: it was supposed to create two blobs in the background that morph into another.
-.blob-motion {
-    position: absolute;
-    transform: translateY(-20%);
-    z-index: 0;
-  }
-
-  .blob-content {
-    z-index: -1;
-  }
-
-  .blobs {
-    width: 100%;
-    background: url('../assets/blob1.svg') no-repeat bottom / cover;
-  }
-  */

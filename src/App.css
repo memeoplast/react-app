@@ -14,9 +14,21 @@
   &.mode--dark {
     --color--text-default: white;
     --color--layout-default: #1f2937;
-    --color--layout-light:#e5e7eb;
+    --color--layout-light: #e5e7eb;
     --color-text-dark: black;
     --color--layout-dark: rgb(35, 35, 35);
-
   }
+}
+
+.heading__primary {
+  margin-bottom: 2rem;
+  font-size: 160px;
+  text-align: center;
+}
+
+.heading__secondary {
+  margin-bottom: 4rem;
+  font-size: 80px;
+  text-align: center;
+  margin-top: 0;
 }

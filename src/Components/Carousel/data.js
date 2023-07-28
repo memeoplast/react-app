@@ -1,11 +1,11 @@
 export const responsive = {
     LargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
-      items: 6,
+      items: 5,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4,
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -21,65 +21,50 @@ export const responsive = {
     {
       id: 1,
       imageurl:
-        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHByb2R1Y3RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      name: "Colorful sneakers",
-      price: "$19.99",
-      description: "Some text about the product..",
+        "../../public/Marketing.jpg",
+      name: "Digital Marketing Solutions",
+      description: "Boost your online presence and reach your target audience with our comprehensive digital marketing services, including SEO, social media management, email marketing, and pay-per-click advertising.",
     },
     {
       id: 2,
-      imageurl:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZHVjdHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-      name: "Sport sneakers",
-      price: "$21.99",
-      description: "Some text about the product..",
+      imageurl:"../../public/IT-Consulting.jpg",
+      name: "IT Consultation and Support",
+      description: "Get expert advice and reliable IT support for your business needs, from network setup and cybersecurity to software implementation and troubleshooting.",
     },
     {
       id: 3,
-      imageurl:
-        "https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fHByb2R1Y3RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      name: "iWatch",
-      price: "$99.99",
-      description: "Some text about the product..",
+      imageurl:"../../public/Custom-Software.jpg",
+      name: "Custom Software Development",
+      description: "Enhance your operations with tailor-made software solutions designed to streamline processes, improve efficiency, and meet your specific business requirements.",
     },
     {
       id: 4,
-      imageurl:
-        "https://images.unsplash.com/photo-1610824352934-c10d87b700cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fHByb2R1Y3RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      name: "Water Bottle",
-      price: "$14.99",
-      description: "Some text about the product..",
+      imageurl:"../../public/Training.jpg",
+      name: "Corporate Training Programs",
+      description: "Empower your workforce with our specialized corporate training programs, covering leadership development, team-building, communication skills, and more.",
     },
     {
       id: 5,
-      imageurl:
-        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHByb2R1Y3RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      name: "Vans sneakers",
-      price: "$38.99",
-      description: "Some text about the product..",
+      imageurl:"../../public/Analytics.jpg",
+      name: "Business Analytics and Insights",
+      description: "Make informed decisions and stay ahead of the competition by leveraging our data analysis and insights services, providing valuable information for strategic planning.",
     },
     {
       id: 6,
-      imageurl:
-        "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fHByb2R1Y3RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      name: "Coco Noir",
-      price: "$149.99",
-      description: "Some text about the product..",
+      imageurl:"../../public/Branding.jpg",
+      name: "Branding and Design Services",
+      description: "Stand out from the crowd with captivating branding and design solutions, including logo design, marketing materials, and website development.",
     },
     {
       id: 7,
-      imageurl:
-        "https://images.unsplash.com/photo-1589782182703-2aaa69037b5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTJ8fHByb2R1Y3RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      name: "Sunglasses",
-      price: "$38.99",
-      description: "Some text about the product..",
+      imageurl:"../../public/SCM.jpg",
+      name: "Supply Chain Management",
+      description: "Optimize your supply chain for efficiency and cost-effectiveness with our end-to-end supply chain management services, from sourcing to distribution.",
     },
     {
       id: 8,
-      imageurl:
-        "https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2R1Y3RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      name: "Dove cream",
-      price: "$49.99",
-      description: "Some text about the product..",
+      imageurl:"../../public/Sustainability.jpg",
+      name: "Sustainability Consulting",
+      description: "Embrace eco-friendly practices and enhance your corporate social responsibility with our sustainability consulting, helping you create a positive impact on the environment and society.",
     },
   ];

@@ -1,0 +1,37 @@
+.react-multi-carousel-list {
+  width: 100%;
+  height: 750px;
+  justify-content: center;
+  align-items: center;
+  margin-left: -6rem;
+}
+
+#Landing__Products {
+  background-color: var(--color--layout-light);
+  padding: 3rem;
+  color: var(--color-text-dark);
+}
+
+.product__heading {
+  font-size: 40px;
+  margin: 2rem auto;
+}
+.product__info {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: auto 2rem;
+}
+.product__image {
+  height: 12em;
+  width: 12em;
+  border-radius: 50%;
+}
+
+.product__card {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  max-width: 420px;
+  margin: auto 2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  font-family: arial;
+}

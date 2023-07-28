@@ -12,17 +12,23 @@ const ResponsiveCarousel = () => {
       url={item.imageurl}
       price={item.price}
       description={item.description}
+      key={item.id}
     />
   ));
 
   return (
-    <div className="block__content">
+    <div className="block__content" id="Landing__Products">
       <h3 className="heading__secondary">Products</h3>
       <Carousel
         swipeable={true}
         draggable={true}
         showDots={true}
         responsive={responsive}
+        infinite={true}
+        partialVisible={false}
+        autoPlay={true}
+        autoPlaySpeed={6000}
+        keyBoardControl={true}
       >
         {product}
       </Carousel>
