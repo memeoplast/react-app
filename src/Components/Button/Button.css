@@ -1,0 +1,16 @@
+.button__big {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #8000e5;
+  background-color: var(--color--layout-fixed-light);
+  border: 1px solid #8000e5;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.button__big:hover {
+  background-color: var(--color--layout-light);
+}

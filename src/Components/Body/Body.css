@@ -6,14 +6,11 @@
   background-color: var(--color--layout-default);
   color: var(--color--text-default);
   width: 100%;
-  padding-top: 3rem;
+  min-height: 700px;
 }
 
-.block__content-header {
-  background-image: url(../../assets/header.svg);
-  aspect-ratio: 960/100;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.content__text {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
 }

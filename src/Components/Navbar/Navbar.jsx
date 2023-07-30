@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.svg";
 import Switch from "react-switch";
+import Button__link from "../Button/button";
 import { BsSunFill, BsMoonStarsFill } from "react-icons/bs";
 
 const Navbar = ({ isDark, setIsDark }) => {
@@ -35,7 +36,7 @@ const Navbar = ({ isDark, setIsDark }) => {
               <a className="navbar__link" href="#">
                 Pricing
               </a>
-              <a className="navbar__link" href="#">
+              <a className="navbar__link" href="#AboutUs">
                 About Us
               </a>
             </div>
@@ -57,12 +58,7 @@ const Navbar = ({ isDark, setIsDark }) => {
                   </div>
                 }
               />
-              {/* der button kann eine eigene Komponente werden für Wiederverwendbarkeit (1 button mit href einer mit onclick) */}
-              <a href="https://giphy.com/clips/eternalfamilytv-eternal-family-tv-99ers-nFgGB7f0BLqGNcpIyc">
-                <button className="button__big" type="button">
-                  CONTACT US
-                </button>
-              </a>
+              <Button__link />
             </div>
           </div>
 
