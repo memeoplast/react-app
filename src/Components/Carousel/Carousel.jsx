@@ -18,17 +18,16 @@ const ResponsiveCarousel = () => {
 
   return (
     <div className="block__content" id="Landing__Products">
-      <h3 className="heading__secondary">Products</h3>
+      <h3 className="heading__tertiary">How can we help you?</h3>
       <Carousel
         swipeable={true}
         draggable={true}
         showDots={true}
         responsive={responsive}
-        infinite={true}
-        partialVisible={false}
-        autoPlay={true}
-        autoPlaySpeed={6000}
-        keyBoardControl={true}
+        infinite={false}
+        slidesToSlide={2}
+        rewind={true}
+        rewindWithAnimation={true}
       >
         {product}
       </Carousel>

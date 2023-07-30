@@ -1,25 +1,22 @@
 .react-multi-carousel-list {
   width: 100%;
-  height: 750px;
-  justify-content: center;
-  align-items: center;
-  margin-left: -6rem;
+  /* margin-left: -6rem; */
 }
 
 #Landing__Products {
-  background-color: var(--color--layout-light);
+  background-color: var(--color--layout-dark);
   padding: 3rem;
-  color: var(--color-text-dark);
+  color: var(--color--text-default);
 }
 
 .product__heading {
-  font-size: 40px;
+  font-size: 20px;
   margin: 2rem auto;
 }
 .product__info {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5;
-  margin: auto 2rem;
+  text-align: left;
 }
 .product__image {
   height: 12em;
@@ -30,8 +27,7 @@
 .product__card {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
   max-width: 420px;
-  margin: auto 2rem;
-  margin-bottom: 4rem;
-  text-align: center;
+  margin: 4rem 2rem;
+  text-align: left;
   font-family: arial;
 }
