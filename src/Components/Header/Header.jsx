@@ -1,12 +1,12 @@
 import React from "react";
 import "./Header.css";
 
-const Header = () => {
+const Header = ({ isDark }) => {
   return (
-    <div className="block__header">
+    <div className={`block__header ${isDark && "mode--dark"}`}>
       <div className="block__float-light">
-        <h1 className="heading__primary">Hello World!</h1>
-        <h3 className="heading__secondary">This is a Header.</h3>
+        <h1 className="heading__primary">InnovaSphere</h1>
+        <h3 className="heading__secondary"></h3>
       </div>
     </div>
   );

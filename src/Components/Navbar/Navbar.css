@@ -3,6 +3,7 @@
   position: fixed;
   z-index: 2;
   background-color: var(--color--layout-fixed-light);
+  margin-top: -0.5rem;
 }
 
 .navbar {
@@ -15,6 +16,10 @@
 .navbar__logo {
   padding: 0.7rem 1.5rem;
   height: auto;
+  transition: transform 0.3s ease;
+}
+.navbar__logo:hover {
+  transform: rotate(360deg);
 }
 
 .navbar__navigation {
@@ -39,7 +44,7 @@
     align-items: flex-end;
     flex-direction: column;
     text-align: end;
-    background-color: rgb(247, 247, 247);
+    background-color: var(--color--layout-default);
     padding: 2rem;
     position: absolute;
     right: 0;
@@ -69,20 +74,36 @@
 
 .navbar__link {
   text-decoration: none;
-  color: var(--color--text-dark);
+  color: var(--color--text-default);
   font-size: 20px;
-  font-weight: 600;
-  font-size: 13px;
+  font-weight: bolder;
+  font-size: 16px;
   line-height: 25px;
   margin: 0 1rem;
   white-space: nowrap;
   cursor: pointer;
+  font-family: Maven Pro;
+  position: relative;
+}
+.navbar__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color--primary);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.navbar__link:hover::after {
+  transform: scaleX(1);
 }
 
 .navbar__button-container {
   display: flex;
   align-items: center;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
   border-radius: 1rem;
   padding: 1rem;
   justify-content: center;
@@ -100,12 +121,13 @@
   padding-top: 0.4rem;
   justify-content: center;
   align-items: center;
-  color: #8000e5;
+  color: #bb86fc;
 }
 
 .navbar__theme-switch-unchecked-icon {
   display: flex;
   padding-top: 0.4rem;
+  padding-right: 0.3rem;
   justify-content: center;
   align-items: center;
   color: white;
@@ -113,8 +135,11 @@
 
 .navbar__hamburger-menu {
   display: none;
+  color: var(--color--primary);
 
   @media screen and (max-width: 900px) {
     display: block;
+    padding-right: 1rem;
+    margin-right: 0rem;
   }
 }

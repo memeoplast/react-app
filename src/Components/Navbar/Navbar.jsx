@@ -27,13 +27,10 @@ const Navbar = ({ isDark, setIsDark }) => {
               <a className="navbar__link" href="#">
                 Home
               </a>
-              <a className="navbar__link" href="#">
+              <a className="navbar__link" href="#Offers">
                 Offers
               </a>
-              <a className="navbar__link" href="#">
-                Products
-              </a>
-              <a className="navbar__link" href="#">
+              <a className="navbar__link" href="#Pricing">
                 Pricing
               </a>
               <a className="navbar__link" href="#AboutUs">
@@ -58,20 +55,23 @@ const Navbar = ({ isDark, setIsDark }) => {
                   </div>
                 }
               />
-              <Button__link />
+              <Button__link
+                text="Contact Us"
+                url="https://giphy.com/clips/eternalfamilytv-eternal-family-tv-99ers-nFgGB7f0BLqGNcpIyc"
+              />
             </div>
           </div>
 
           <div className="navbar__hamburger-menu">
             {isMenuOpen ? (
               <RiCloseLine
-                color="#000"
+                color="6200ee"
                 size={27}
                 onClick={() => setIsMenuOpen(false)}
               />
             ) : (
               <RiMenu3Line
-                color="#000"
+                color="#6200ee"
                 size={27}
                 onClick={() => setIsMenuOpen(true)}
               />

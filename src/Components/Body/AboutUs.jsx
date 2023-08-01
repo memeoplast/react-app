@@ -1,14 +1,10 @@
 import React from "react";
-import "./AboutUs.css";
 
 const AboutUs = () => {
   return (
-    <div
-      className="block__content block__float-light background__image"
-      id="AboutUs"
-    >
-      <h2 className="heading__secondary">About Us</h2>
+    <div className="block__content " id="AboutUs">
       <div className="content__text">
+        <h2 className="heading__secondary">About Us</h2>
         <p className="text__default">
           At InnovaSphere Solutions, we are committed to revolutionizing the way
           businesses thrive in today&apos;s dynamic market. Our diverse range of

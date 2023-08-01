@@ -1,0 +1,18 @@
+.CTA__container {
+  background-color: var(--color--layout-dark);
+  border-radius: 6px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: row;
+  color: var(--color--text-default);
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  gap: 20px;
+  font-weight: bold;
+}
+
+.CTA__subtext {
+  font-size: small;
+  font-weight: 100;
+}

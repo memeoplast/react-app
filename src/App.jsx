@@ -1,7 +1,8 @@
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar.jsx";
 import Header from "./Components/Header/Header.jsx";
-import Body from "./Components/Body/Body.jsx";
+import Testimonials from "./Components/Testimonial-Cards/Testimonials.jsx";
+import Pricing from "./Routes/Pricing";
 import AboutUs from "./Components/Body/AboutUs";
 import Footer from "./Components/Footer/Footer.jsx";
 import ResponsiveCarousel from "./Components/Carousel/Carousel.jsx";
@@ -12,9 +13,10 @@ function App() {
   return (
     <div className={`app ${isDark && "mode--dark"}`}>
       <Navbar isDark={isDark} setIsDark={setIsDark} />
-      <Header />
-      <Body />
+      <Header isDark={isDark} />
       <ResponsiveCarousel />
+      <Pricing />
+      <Testimonials />
       <AboutUs />
       <Footer />
     </div>
