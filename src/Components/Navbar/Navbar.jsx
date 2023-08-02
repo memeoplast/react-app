@@ -5,18 +5,25 @@ import logo from "../../assets/logo.svg";
 import Switch from "react-switch";
 import Button__link from "../Button/button";
 import { BsSunFill, BsMoonStarsFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ isDark, setIsDark }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const handleScrollToElement = () => {
+    const element = document.getElementById("target-element");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="navbar__bg">
       <div className="navbar">
         <div className="navbar__navigation">
           <div className="navbar__logo">
-            <a href="#">
+            <Link to={"/"}>
               <img src={logo} alt="company logo" />
-            </a>
+            </Link>
           </div>
           <div
             className={`navbar__content ${
@@ -24,15 +31,27 @@ const Navbar = ({ isDark, setIsDark }) => {
             }`}
           >
             <div className="navbar__links">
-              <a className="navbar__link" href="#">
+              <Link
+                to={"/"}
+                onClick={handleScrollToElement}
+                className="navbar__link"
+              >
                 Home
-              </a>
-              <a className="navbar__link" href="#Offers">
+              </Link>
+              <Link
+                to={"/"}
+                onClick={() => handleScrollToElement("Offers")}
+                className="navbar__link"
+              >
                 Offers
-              </a>
-              <a className="navbar__link" href="#Pricing">
+              </Link>
+              <Link
+                to={"/"}
+                className="navbar__link"
+                onClick={() => handleScrollToElement("Pricing")}
+              >
                 Pricing
-              </a>
+              </Link>
               <a className="navbar__link" href="#AboutUs">
                 About Us
               </a>
@@ -55,10 +74,7 @@ const Navbar = ({ isDark, setIsDark }) => {
                   </div>
                 }
               />
-              <Button__link
-                text="Contact Us"
-                url="https://giphy.com/clips/eternalfamilytv-eternal-family-tv-99ers-nFgGB7f0BLqGNcpIyc"
-              />
+              <Button__link text="Contact Us" url="Contact" />
             </div>
           </div>
 

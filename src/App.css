@@ -5,10 +5,6 @@
   margin: auto 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .app {
   background-color: var(--color--layout-backdrop-default);
 

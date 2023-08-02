@@ -1,11 +1,12 @@
 import React from "react";
 import "./Button.css";
+import { Link } from "react-router-dom";
 
 const Button__link = ({ text, url }) => {
   return (
-    <a href={url} target="_blank" className="button__big" rel="noreferrer">
+    <Link to={url} className="button__big" rel="noreferrer">
       {text}
-    </a>
+    </Link>
   );
 };
 

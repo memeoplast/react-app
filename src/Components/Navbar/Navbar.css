@@ -16,7 +16,7 @@
 .navbar__logo {
   padding: 0.7rem 1.5rem;
   height: auto;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 .navbar__logo:hover {
   transform: rotate(360deg);

@@ -1,5 +1,5 @@
 import React from "react";
-import CTA from "../Components/CTA/CTA.jsx";
+import CTA from "./CTA/CTA.jsx";
 
 const Pricing = () => {
   return (
