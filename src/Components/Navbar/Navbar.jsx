@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./Navbar.css";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.svg";
@@ -6,9 +6,18 @@ import Switch from "react-switch";
 import Button__link from "../Button/button";
 import { BsSunFill, BsMoonStarsFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import AppContext from "../../AppContext";
 
-const Navbar = ({ isDark, setIsDark }) => {
+const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const { isDark, setIsDark } = useContext(AppContext);
+
+  const handleDarkModeToggle = () => {
+    setIsDark(!isDark);
+    console.log("isDark state:", !isDark);
+  };
+
   const handleScrollToElement = () => {
     const element = document.getElementById("target-element");
     if (element) {
@@ -60,7 +69,7 @@ const Navbar = ({ isDark, setIsDark }) => {
             <div className="navbar__button-container">
               <Switch
                 className="navbar__theme-switch"
-                onChange={() => setIsDark(!isDark)}
+                onChange={handleDarkModeToggle}
                 checked={isDark}
                 onColor="#000"
                 checkedIcon={
