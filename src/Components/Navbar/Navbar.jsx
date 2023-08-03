@@ -6,7 +6,7 @@ import Switch from "react-switch";
 import Button__link from "../Button/button";
 import { BsSunFill, BsMoonStarsFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import AppContext from "../../AppContext";
+import { AppContext } from "../../AppContext";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

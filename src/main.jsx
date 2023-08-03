@@ -6,11 +6,16 @@ import Home from "./Routes/Home.jsx";
 import Contact from "./routes/Contact.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { AppProvider } from "./AppContext.jsx";
 
 const router = createBrowserRouter([
   {
     path: "",
-    element: <App />,
+    element: (
+      <AppProvider>
+        <App />
+      </AppProvider>
+    ),
     errorElement: <ErrorPage />,
     children: [
       {

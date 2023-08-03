@@ -1,22 +1,21 @@
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
-import { useState } from "react";
+import { useContext } from "react";
 import { Outlet } from "react-router-dom";
-import { AppProvider } from "./AppContext";
+import { AppContext } from "./AppContext";
 
 function App() {
-  const [isDark] = useState(false);
+  const { isDark } = useContext(AppContext);
+
   return (
-    <AppProvider>
-      <div className={`app ${isDark && "mode--dark"}`}>
-        <Navbar />
-        <div id="components__container">
-          <Outlet />
-        </div>
-        <Footer />
+    <div className={`app ${isDark && "mode--dark"}`}>
+      <Navbar />
+      <div id="components__container">
+        <Outlet />
       </div>
-    </AppProvider>
+      <Footer />
+    </div>
   );
 }
 
