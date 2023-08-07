@@ -6,6 +6,7 @@
   background-color: var(--color--layout-default);
   color: var(--color--text-dark);
   width: 100%;
+  aspect-ratio: 960/300;
   background-image: url(../../assets/header.svg);
   background-position: center;
   background-size: cover;

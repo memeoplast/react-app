@@ -5,6 +5,10 @@ import { useContext } from "react";
 import { Outlet } from "react-router-dom";
 import { AppContext } from "./AppContext";
 
+export async function loader() {
+  const contacts = await getContacts();
+  return { contacts };
+}
 function App() {
   const { isDark } = useContext(AppContext);
 

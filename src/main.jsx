@@ -17,6 +17,7 @@ const router = createBrowserRouter([
       </AppProvider>
     ),
     errorElement: <ErrorPage />,
+    // loader: rootLoader,
     children: [
       {
         path: "/",
