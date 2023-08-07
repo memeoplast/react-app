@@ -18,11 +18,9 @@ const Navbar = () => {
     console.log("isDark state:", !isDark);
   };
 
-  const handleScrollToElement = () => {
-    const element = document.getElementById("target-element");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+  const handleScrollToElement = (id) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -42,28 +40,32 @@ const Navbar = () => {
             <div className="navbar__links">
               <Link
                 to={"/"}
-                onClick={handleScrollToElement}
+                onClick={() => handleScrollToElement("Header")}
                 className="navbar__link"
               >
                 Home
               </Link>
               <Link
-                to={"/"}
+                to={"/#Offers"}
                 onClick={() => handleScrollToElement("Offers")}
                 className="navbar__link"
               >
                 Offers
               </Link>
               <Link
-                to={"/"}
+                to={"/#Pricing"}
                 className="navbar__link"
                 onClick={() => handleScrollToElement("Pricing")}
               >
                 Pricing
               </Link>
-              <a className="navbar__link" href="#AboutUs">
+              <Link
+                to={"/#AboutUs"}
+                className="navbar__link"
+                onClick={() => handleScrollToElement("AboutUs")}
+              >
                 About Us
-              </a>
+              </Link>
             </div>
 
             <div className="navbar__button-container">
