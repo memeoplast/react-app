@@ -39,7 +39,7 @@ const Navbar = () => {
             <div className="navbar__links">
               <Link
                 to={"/"}
-                onClick={handleScrollToElement}
+                onClick={() => handleScrollToElement("Header")}
                 className="navbar__link"
               >
                 Home
