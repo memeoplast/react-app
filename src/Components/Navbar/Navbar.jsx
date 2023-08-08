@@ -15,14 +15,11 @@ const Navbar = () => {
 
   const handleDarkModeToggle = () => {
     setIsDark(!isDark);
-    console.log("isDark state:", !isDark);
   };
 
-  const handleScrollToElement = () => {
-    const element = document.getElementById("target-element");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+  const handleScrollToElement = (id) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -48,22 +45,26 @@ const Navbar = () => {
                 Home
               </Link>
               <Link
-                to={"/"}
+                to={"/#Offers"}
                 onClick={() => handleScrollToElement("Offers")}
                 className="navbar__link"
               >
                 Offers
               </Link>
               <Link
-                to={"/"}
+                to={"/#Pricing"}
                 className="navbar__link"
                 onClick={() => handleScrollToElement("Pricing")}
               >
                 Pricing
               </Link>
-              <a className="navbar__link" href="#AboutUs">
+              <Link
+                to={"/#AboutUs"}
+                className="navbar__link"
+                onClick={() => handleScrollToElement("AboutUs")}
+              >
                 About Us
-              </a>
+              </Link>
             </div>
 
             <div className="navbar__button-container">
@@ -102,65 +103,6 @@ const Navbar = () => {
               />
             )}
           </div>
-          {/* 
-            {isMenuOpen && (
-              <div className="navbar__hamburger-menu scale-up-center">
-                <div className="navbar__hamburger-menu-links">
-                  
-                    <a className="navbar__link" href="#">
-                      Home
-                    </a>
-                  
-                  
-                    <a className="navbar__link" href="#">
-                      Offers
-                    </a>
-                  
-                  
-                    <a className="navbar__link" href="#">
-                      Products
-                    </a>
-                  
-                  
-                    <a className="navbar__link" href="#">
-                      Pricing
-                    </a>
-                  
-                  
-                    <a className="navbar__link" href="#">
-                      About Us
-                    </a>
-                  
-                </div>
-                <div className="navbar__menu-links-sign">
-                  <div className="switch__toggle">
-                    <Switch
-                      className="theme-switch"
-                      onChange={toggleTheme}
-                      checked={isDark === "dark"}
-                      onColor="#1f2937"
-                      checkedIcon={
-                        <div className="theme-switch__checkedIcon">
-                          <BsMoonStarsFill />
-                        </div>
-                      }
-                      uncheckedIcon={
-                        <div className="theme-switch__uncheckedIcon">
-                          <BsSunFill />
-                        </div>
-                      }
-                    />
-                  </div>
-
-                  <a href="https://giphy.com/clips/eternalfamilytv-eternal-family-tv-99ers-nFgGB7f0BLqGNcpIyc">
-                    <button className="button__big" type="button">
-                      CONTACT US
-                    </button>
-                  </a>
-                </div>
-              </div>
-            )}
-          </div> */}
         </div>
       </div>
     </div>

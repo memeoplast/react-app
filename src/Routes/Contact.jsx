@@ -5,39 +5,47 @@ import Button__link from "../Components/Button/button";
 
 export default function EditContact() {
   return (
-    <div className="block__content">
+    <div className="block__content Form">
       <Form method="post" id="contact-form">
         <p className="text__default">
-          <span>Name</span>
+          <span className="text__default">Name</span>
           <input
-            placeholder="First"
+            className="Form__input"
+            placeholder="First name"
             aria-label="First name"
             type="text"
             name="first"
           />
           <input
-            placeholder="Last"
+            className="Form__input"
+            placeholder="Last name"
             aria-label="Last name"
             type="text"
             name="last"
           />
         </p>
-        <label>
-          <span>E-Mail</span>
-          <input type="text" name="email" placeholder="jack@gmail.com" />
-        </label>
-        <label>
-          <span>Notes</span>
+        <div>
+          <span className="text__default">E-Mail</span>
+          <input
+            className="Form__input"
+            type="text"
+            name="email"
+            placeholder="jack@gmail.com"
+          />
+        </div>
+        <div>
+          <p className="text__default">Notes</p>
           <textarea
+            className="Form__input"
             name="notes"
             placeholder="Let us know what you think..."
-            rows={6}
+            rows={8}
           />
-        </label>
-        <p>
-          <Button__link text="Save" />
+        </div>
+        <div className="Form__buttons">
+          <Button__link text="Send" />
           <Button__link text="Cancel" />
-        </p>
+        </div>
       </Form>
     </div>
   );
