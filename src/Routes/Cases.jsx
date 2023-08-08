@@ -42,9 +42,9 @@ const Case1 = () => {
         </ul>
         <p className="heading__quaternary">Conclusion</p>
         <p className="text__default">
-          InnovaSphere's training catalyzed positive change in ABC Corp's
-          workforce, showcasing the power of tailored workshops in driving
-          organizational transformation.
+          InnovaSphere&apos;s training catalyzed positive change in ABC
+          Corp&apos;s workforce, showcasing the power of tailored workshops in
+          driving organizational transformation.
         </p>
       </div>
       <div className="content__text">
