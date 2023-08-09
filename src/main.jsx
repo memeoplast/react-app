@@ -4,9 +4,8 @@ import App from "./App.jsx";
 import ErrorPage from "./routes/error-page.jsx";
 import Home from "./Routes/Home.jsx";
 import Contact from "./routes/Contact.jsx";
-import Cases from "./Routes/Cases.jsx";
+import Cases from "./Routes/Cases/Cases.jsx";
 import Services from "./Routes/Services.jsx";
-import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { AppProvider } from "./AppContext.jsx";
 

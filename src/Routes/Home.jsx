@@ -15,7 +15,7 @@ function Home() {
 
   return (
     <div className="">
-      <Header />
+      <Header heading="InnovaSphere" />
       <ResponsiveCarousel />
       <Pricing />
       <Testimonials />

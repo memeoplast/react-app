@@ -13,10 +13,14 @@ export default function Testimonial(props) {
         <div className="card__secondary-content">
           <div className="text__center">{props.company}</div>
           <div className="card__img-container">
-            <img className="card__img" src={props.url} alt="Profile Picture" />
+            <img
+              className="card__img"
+              src={props.imageurl}
+              alt="Profile Picture"
+            />
           </div>
           <p className="text__center">{props.name}</p>
-          <Button text="View Case" url="Cases" />
+          <Button text="View Case" url={props.siteurl} />
         </div>
       </div>
     </div>
