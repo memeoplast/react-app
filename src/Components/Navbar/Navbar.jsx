@@ -1,22 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./Navbar.css";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.svg";
 import Switch from "react-switch";
 import Button__link from "../Button/button";
 import { BsSunFill, BsMoonStarsFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
+import { AppContext } from "../../AppContext";
 
-const Navbar = ({ isDark, setIsDark }) => {
+const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const { isDark, setIsDark } = useContext(AppContext);
+
+  const handleDarkModeToggle = () => {
+    setIsDark(!isDark);
+  };
+
+  const handleScrollToElement = (id) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className="navbar__bg">
       <div className="navbar">
         <div className="navbar__navigation">
           <div className="navbar__logo">
-            <a href="#">
+            <Link to={"/"}>
               <img src={logo} alt="company logo" />
-            </a>
+            </Link>
           </div>
           <div
             className={`navbar__content ${
@@ -24,24 +37,40 @@ const Navbar = ({ isDark, setIsDark }) => {
             }`}
           >
             <div className="navbar__links">
-              <a className="navbar__link" href="#">
+              <Link
+                to={"/"}
+                onClick={() => handleScrollToElement("Header")}
+                className="navbar__link"
+              >
                 Home
-              </a>
-              <a className="navbar__link" href="#Offers">
+              </Link>
+              <Link
+                to={"/#Offers"}
+                onClick={() => handleScrollToElement("Offers")}
+                className="navbar__link"
+              >
                 Offers
-              </a>
-              <a className="navbar__link" href="#Pricing">
+              </Link>
+              <Link
+                to={"/#Pricing"}
+                className="navbar__link"
+                onClick={() => handleScrollToElement("Pricing")}
+              >
                 Pricing
-              </a>
-              <a className="navbar__link" href="#AboutUs">
+              </Link>
+              <Link
+                to={"/#AboutUs"}
+                className="navbar__link"
+                onClick={() => handleScrollToElement("AboutUs")}
+              >
                 About Us
-              </a>
+              </Link>
             </div>
 
             <div className="navbar__button-container">
               <Switch
                 className="navbar__theme-switch"
-                onChange={() => setIsDark(!isDark)}
+                onChange={handleDarkModeToggle}
                 checked={isDark}
                 onColor="#000"
                 checkedIcon={
@@ -55,10 +84,7 @@ const Navbar = ({ isDark, setIsDark }) => {
                   </div>
                 }
               />
-              <Button__link
-                text="Contact Us"
-                url="https://giphy.com/clips/eternalfamilytv-eternal-family-tv-99ers-nFgGB7f0BLqGNcpIyc"
-              />
+              <Button__link text="Contact Us" url="Contact" />
             </div>
           </div>
 
@@ -77,65 +103,6 @@ const Navbar = ({ isDark, setIsDark }) => {
               />
             )}
           </div>
-          {/* 
-            {isMenuOpen && (
-              <div className="navbar__hamburger-menu scale-up-center">
-                <div className="navbar__hamburger-menu-links">
-                  
-                    <a className="navbar__link" href="#">
-                      Home
-                    </a>
-                  
-                  
-                    <a className="navbar__link" href="#">
-                      Offers
-                    </a>
-                  
-                  
-                    <a className="navbar__link" href="#">
-                      Products
-                    </a>
-                  
-                  
-                    <a className="navbar__link" href="#">
-                      Pricing
-                    </a>
-                  
-                  
-                    <a className="navbar__link" href="#">
-                      About Us
-                    </a>
-                  
-                </div>
-                <div className="navbar__menu-links-sign">
-                  <div className="switch__toggle">
-                    <Switch
-                      className="theme-switch"
-                      onChange={toggleTheme}
-                      checked={isDark === "dark"}
-                      onColor="#1f2937"
-                      checkedIcon={
-                        <div className="theme-switch__checkedIcon">
-                          <BsMoonStarsFill />
-                        </div>
-                      }
-                      uncheckedIcon={
-                        <div className="theme-switch__uncheckedIcon">
-                          <BsSunFill />
-                        </div>
-                      }
-                    />
-                  </div>
-
-                  <a href="https://giphy.com/clips/eternalfamilytv-eternal-family-tv-99ers-nFgGB7f0BLqGNcpIyc">
-                    <button className="button__big" type="button">
-                      CONTACT US
-                    </button>
-                  </a>
-                </div>
-              </div>
-            )}
-          </div> */}
         </div>
       </div>
     </div>

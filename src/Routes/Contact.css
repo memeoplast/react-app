@@ -1,0 +1,17 @@
+.Form {
+  height: 100%;
+}
+.Form__input {
+  margin: 0.5rem;
+  flex-direction: column;
+  width: 90%;
+  background-color: var(--color--layout-light);
+  box-shadow: 6px 6px var(--color--layout-dark);
+  border-style: line;
+  height: 2rem;
+}
+
+.Form__buttons {
+  display: flex;
+  flex: 1;
+}

@@ -12,10 +12,7 @@ const CTA = () => {
         </div>
       </div>
       <div className="CTA__button-container">
-        <Button__link
-          text="Contact Us"
-          url="https://giphy.com/clips/eternalfamilytv-eternal-family-tv-99ers-nFgGB7f0BLqGNcpIyc"
-        />
+        <Button__link text="Contact Us" url="/Contact" />
       </div>
     </div>
   );
