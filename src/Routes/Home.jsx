@@ -1,14 +1,11 @@
-import { React, useContext, useEffect } from "react";
+import { React, useEffect } from "react";
 import Header from "../Components/Header/Header.jsx";
 import Testimonials from "../Components/Testimonial-Cards/Testimonials.jsx";
 import Pricing from "../Components/Pricing";
 import AboutUs from "../Components/Body/AboutUs";
 import ResponsiveCarousel from "../Components/Carousel/Carousel.jsx";
-import { AppContext } from "../AppContext.jsx";
 
 function Home() {
-  const { isDark } = useContext(AppContext);
-
   useEffect(() => {
     const hash = window.location.hash;
     if (!hash) return;
@@ -18,7 +15,7 @@ function Home() {
 
   return (
     <div className="">
-      <Header isDark={isDark} />
+      <Header />
       <ResponsiveCarousel />
       <Pricing />
       <Testimonials />

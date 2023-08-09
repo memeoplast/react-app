@@ -1,8 +1,6 @@
 .react-multi-carousel-list {
   width: 100%;
 }
-.react-multi-carousel-track {
-}
 #Landing__Products {
   background-color: var(--color--layout-dark);
   color: var(--color--text-default);

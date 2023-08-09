@@ -15,7 +15,7 @@ function App() {
   return (
     <div className={`app ${isDark && "mode--dark"}`}>
       <Navbar />
-      <div className="components__container">
+      <div>
         <Outlet />
       </div>
       <Footer />

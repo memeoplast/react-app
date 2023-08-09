@@ -2,12 +2,12 @@ import React from "react";
 import "./Button.css";
 import { Link } from "react-router-dom";
 
-const Button__link = ({ text, url }) => {
+const Button = ({ text, url }) => {
   return (
-    <Link to={url} className="button__big" rel="noreferrer">
+    <Link to={url} className="button__large" rel="noreferrer">
       {text}
     </Link>
   );
 };
 
-export default Button__link;
+export default Button;

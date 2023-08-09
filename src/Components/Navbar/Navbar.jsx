@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.svg";
 import Switch from "react-switch";
-import Button__link from "../Button/button";
+import Button from "../Button/button";
 import { BsSunFill, BsMoonStarsFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { AppContext } from "../../AppContext";
@@ -12,10 +12,6 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const { isDark, setIsDark } = useContext(AppContext);
-
-  const handleDarkModeToggle = () => {
-    setIsDark(!isDark);
-  };
 
   const handleScrollToElement = (id) => {
     const element = document.getElementById(id);
@@ -70,7 +66,9 @@ const Navbar = () => {
             <div className="navbar__button-container">
               <Switch
                 className="navbar__theme-switch"
-                onChange={handleDarkModeToggle}
+                onChange={() => {
+                  setIsDark(!isDark);
+                }}
                 checked={isDark}
                 onColor="#000"
                 checkedIcon={
@@ -84,7 +82,7 @@ const Navbar = () => {
                   </div>
                 }
               />
-              <Button__link text="Contact Us" url="Contact" />
+              <Button text="Contact Us" url="Contact" />
             </div>
           </div>
 
