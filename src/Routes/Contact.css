@@ -1,17 +1,41 @@
 .Form {
-  height: 100%;
+  display: flex;
+  margin-top: 4rem;
+  flex-direction: column;
 }
 .Form__input {
-  margin: 0.5rem;
-  flex-direction: column;
-  width: 90%;
   background-color: var(--color--layout-light);
   box-shadow: 6px 6px var(--color--layout-dark);
-  border-style: line;
-  height: 2rem;
+
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: var(--color--text-default);
+  margin: 1rem 0;
 }
 
-.Form__buttons {
+.Form__button {
   display: flex;
   flex: 1;
+}
+
+.text__area-default {
+  background-color: var(--color--layout-light);
+  box-shadow: 6px 6px var(--color--layout-dark);
+
+  resize: vertical;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: var(--color--text-default);
+  margin: 1rem 0;
+}
+
+.error-message {
+  color: var(--color--primary);
+  font-family: Maven Pro;
 }
