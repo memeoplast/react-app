@@ -38,7 +38,7 @@ const router = createBrowserRouter(
   ],
   {
     // eslint-disable-next-line no-undef
-    basename: process.env.PUBLIC_URL,
+    basename: "/react-app",
   }
 );
 
