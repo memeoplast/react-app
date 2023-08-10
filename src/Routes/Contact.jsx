@@ -2,15 +2,17 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import Button from "../Components/Button/button";
+import Header from "../Components/Header/Header";
 
 export const Contact = () => {
   const form = useRef();
   const [errors, setErrors] = useState({});
-  const [isFromVisible, setIsFormVisible] = useState(true);
+  const [isFormVisible, setIsFormVisible] = useState(true);
   const [successMessage, setSuccessMessage] = useState("");
 
   const validateEmail = (email) => {
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const regex =
+      /^[a-zA-Z0-9.!#$%&'*+\\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
     return regex.test(email);
   };
 
@@ -68,38 +70,41 @@ export const Contact = () => {
   };
 
   return (
-    <div className="block__content">
-      {isFromVisible ? (
-        <div className="Form">
-          <h2 className="heading__secondary">
-            We would love to hear from you!
-          </h2>
+    <div>
+      <Header heading="Contact Us" />
+      <div className="block__content">
+        {isFormVisible ? (
+          <div className="Form">
+            <h2 className="heading__secondary">
+              We would love to hear from you!
+            </h2>
 
-          <form ref={form} onSubmit={sendEmail}>
-            <label className="text__default">Name</label>
-            <input className="Form__input" type="text" name="user_name" />
-            {errors.user_name && (
-              <p className="error-message">{errors.user_name}</p>
-            )}
-            <label className="text__default">Email</label>
-            <input className="Form__input" type="email" name="user_email" />
-            {errors.user_email && (
-              <p className="error-message">{errors.user_email}</p>
-            )}
-            <label className="text__default">Message</label>
-            <textarea className="text__area-default" name="message" />
-            {errors.message && (
-              <p className="error-message">{errors.message}</p>
-            )}
-            <input className="button__large" type="submit" value="Send" />
-          </form>
-        </div>
-      ) : (
-        <div className="content__text">
-          <p className="text__default">{successMessage}</p>
-          <Button text="Return Home" url="/" />
-        </div>
-      )}
+            <form ref={form} onSubmit={sendEmail}>
+              <label className="text__default">Name</label>
+              <input className="Form__input" type="text" name="user_name" />
+              {errors.user_name && (
+                <p className="error-message">{errors.user_name}</p>
+              )}
+              <label className="text__default">Email</label>
+              <input className="Form__input" type="email" name="user_email" />
+              {errors.user_email && (
+                <p className="error-message">{errors.user_email}</p>
+              )}
+              <label className="text__default">Message</label>
+              <textarea className="text__area-default" name="message" />
+              {errors.message && (
+                <p className="error-message">{errors.message}</p>
+              )}
+              <input className="button__large" type="submit" value="Send" />
+            </form>
+          </div>
+        ) : (
+          <div className="content__text">
+            <p className="text__default">{successMessage}</p>
+            <Button text="Return Home" url="/" />
+          </div>
+        )}
+      </div>
     </div>
   );
 };
