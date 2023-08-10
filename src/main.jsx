@@ -9,32 +9,38 @@ import Services from "./Routes/Services.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { AppProvider } from "./AppContext.jsx";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "",
+      element: (
+        <AppProvider>
+          <App />
+        </AppProvider>
+      ),
+      errorElement: <ErrorPage />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "contact",
+          element: <Contact />,
+        },
+        {
+          path: "Cases",
+          element: <Cases />,
+        },
+        { path: "Services", element: <Services /> },
+      ],
+    },
+  ],
   {
-    path: "",
-    element: (
-      <AppProvider>
-        <App />
-      </AppProvider>
-    ),
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "contact",
-        element: <Contact />,
-      },
-      {
-        path: "Cases",
-        element: <Cases />,
-      },
-      { path: "Services", element: <Services /> },
-    ],
-  },
-]);
+    // eslint-disable-next-line no-undef
+    basename: process.env.PUBLIC_URL,
+  }
+);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
