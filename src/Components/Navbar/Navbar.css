@@ -4,6 +4,9 @@
   z-index: 2;
   background-color: var(--color--layout-fixed-light);
   margin-top: -0.5rem;
+  @media screen and (max-width: 900px) {
+    width: 90%;
+  }
 }
 
 .navbar {
@@ -103,7 +106,6 @@
 .navbar__button-container {
   display: flex;
   align-items: center;
-  /* margin-right: 2rem; */
   border-radius: 1rem;
   padding: 1rem;
   justify-content: center;
@@ -139,7 +141,7 @@
 
   @media screen and (max-width: 900px) {
     display: block;
-    padding-right: 1rem;
-    margin-right: 0rem;
+    /* padding-right: 1rem;
+    margin-right: 0rem; */
   }
 }
