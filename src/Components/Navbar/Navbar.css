@@ -1,12 +1,9 @@
 .navbar__bg {
   width: 100%;
   position: fixed;
-  z-index: 2;
+  z-index: 9999;
   background-color: var(--color--layout-fixed-light);
   margin-top: -0.5rem;
-  @media screen and (max-width: 900px) {
-    width: 90%;
-  }
 }
 
 .navbar {
