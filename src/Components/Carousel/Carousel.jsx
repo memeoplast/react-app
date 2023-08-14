@@ -10,7 +10,6 @@ const ResponsiveCarousel = () => {
     <Product
       name={item.name}
       url={item.imageurl}
-      price={item.price}
       description={item.description}
       key={item.id}
     />
@@ -18,7 +17,6 @@ const ResponsiveCarousel = () => {
 
   return (
     <div className="block__content" id="Offers">
-      {/* <h3 className="heading__tertiary">How can we help you?</h3> */}
       <Carousel
         swipeable={true}
         draggable={true}
