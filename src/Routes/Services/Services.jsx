@@ -8,7 +8,7 @@ const Services = () => {
     <Service
       name={item.name}
       url={item.imageurl}
-      description={item.description}
+      description={item.full_description}
       key={item.id}
       id={item.id}
     />

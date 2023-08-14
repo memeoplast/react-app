@@ -12,6 +12,7 @@ const ResponsiveCarousel = () => {
       url={item.imageurl}
       description={item.description}
       key={item.id}
+      siteurl={item.siteurl}
     />
   ));
 
