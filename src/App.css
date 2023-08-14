@@ -55,7 +55,7 @@ body {
   margin: 5rem auto;
 
   @media screen and (max-width: 900px) {
-    font-size: 50px;
+    font-size: 45px;
   }
 }
 
@@ -72,12 +72,18 @@ body {
   letter-spacing: 2px;
   padding-top: 2rem;
   color: var(--color--primary);
+  @media screen and (max-width: 900px) {
+    font-size: 35px;
+  }
 }
 .heading__tertiary {
   font-size: 30px;
   font-weight: 200;
   font-family: Maven Pro;
   margin-top: 0;
+  @media screen and (max-width: 900px) {
+    font-size: 25px;
+  }
 }
 .heading__quaternary {
   font-size: 20px;

@@ -3,7 +3,7 @@
   position: fixed;
   z-index: 9999;
   background-color: var(--color--layout-fixed-light);
-  margin-top: -0.5rem;
+  /* margin-top: -0.5rem; */
 }
 
 .navbar {
@@ -138,7 +138,6 @@
 
   @media screen and (max-width: 900px) {
     display: block;
-    /* padding-right: 1rem;
-    margin-right: 0rem; */
+    padding-right: 1rem;
   }
 }
